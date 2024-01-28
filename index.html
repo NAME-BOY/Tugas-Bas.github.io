@@ -1,0 +1,79 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/w3.css">
+    <body>
+    <div class="w3-container">
+        <center>
+        <img src="css/Banner.jpg" width=1400px height=250px>
+    </div>
+       <style>
+  body {
+    font: 20px 'Helvetica', sans-serif;
+    background: url(css/bola.gif) no-repeat;
+    background-size: 100% 100%;
+    background-attachment:fixed;
+	</style>
+	   <div class="w3-bar w3-orange">
+            <button class="w3-bar-item w3-button" onclick="openKota('Profile')">Profile</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Basket')">About Basketball And NBA</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Team')">Favourite Team</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Legend')">Favourite player</button>
+			<button class="w3-bar-item w3-button" onclick="openKota('video')">Video</button>
+        </div>
+			
+        <div id="Profile" class="w3-container kota w3-animate-bottom" style="display:none">
+          <center>
+		  <img src="css/Beluga2.jpg" width=30%>
+		    <h2>Bastian Van Crush</h2>
+        <p>Mahasiswa</p>
+        <p>NIm   : 10123174<br>
+           Kelas : IF-5
+        </p>
+		</center>
+        </div>
+
+        <div id="Basket" class="w3-container kota w3-animate-bottom" style="display:none">
+            <center>
+			<img src="css/Basket.jpg" width=30%>
+			<h2>Bola basket adalah olahraga yang dimainkan antara dua tim yang masing-masing terdiri dari lima pemain. 
+				Tujuan dari permainan ini adalah mencetak poin dengan 
+				melempar bola ke dalam keranjang lawan yang terpasang di tiang atau papan yang disebut ring atau basket
+				dan juga mengumpulkan banyak poin untuk memperoleh kemenangan dan juga Olahraga Basket ini pun banyak digemari dikalangan remaja
+				dan juga di Amerika Serikat, penyelenggara terbesar adalah National Basketball Association (NBA), yang merupakan liga bola basket 
+				profesional terkemuka di dunia. NBA menyelenggarakan kompetisi antara tim-tim dari berbagai kota di Amerika Serikat dan Kanada.
+				dan banyak pemain profesional dan juga Team Team yang sangat bagus di setaip teamnya sehingga setiap team memiliki fansnya tersendiri.</h2>
+			<img src="css/NBA.png" width=25%>  
+        </div>
+        <div id="Team" class="w3-container kota w3-animate-bottom" style="display:none">
+           <center>
+		 <img src="css/lakers.png" width=40%>
+			<h2>Los Angeles Lakers</h2>
+		   </center>
+			
+        </div>
+        
+        <div id="Legend" class="w3-container kota w3-animate-bottom" style="display:none">
+            <center>
+			<img src="css/Lebron.gif">
+			<h2>LEBRON JAMES🔥🔥🔥</h2>
+			</center>
+			
+        </div>
+		  
+		  <div id="video" class="w3-container kota w3-animate-bottom" style="display:none">
+            <center>
+			<video control ="css/lebron.mp4"></video>
+			<h2>LEBRON JAMES</h2>
+			</center>
+			
+        </div>
+		
+    <script>
+    function openKota(namakota) {
+    var i;
+    var x = document.getElementsByClassName("kota");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+    }
+    document.getElementById(namakota).style.display = "block"; 
+    }
+    </script>
